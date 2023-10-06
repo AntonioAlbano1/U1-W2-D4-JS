@@ -19,12 +19,12 @@
 
 function crazySum (n1 , n2) {
     const resultCrazy = n1 + n2;
-    if(n1 === n2 ) {resultCrazy * 3}
-    return resultCrazy
+    if(n1 === n2 ) {return n1 + n2 *3}
+    else {return n1 + n2}
 }
 const risultatiCrazy = crazySum(5 , 6)
 console.log(risultatiCrazy)
-const risultatiCrazy2 = crazySum(5 , 5)
+const risultatiCrazy2 = crazySum(10 , 10)
 console.log(risultatiCrazy2)
 
 
@@ -36,8 +36,8 @@ console.log(risultatiCrazy2)
 function crazyDiff (num1 , num2){
     const utc = num1;
     const utc2  = num2;
-    if(Math.floor > 19) {crazyDiff *3}
-    return Math.floor (num1 - num2);
+    Math.floor(num1 - num2)
+    ;
 }
 
 const numeriCrazy = crazyDiff(25 , 19)
@@ -47,8 +47,10 @@ console.log(numeriCrazy)
  se n è uguale a 400.
 */
 
-const boundary = function (){}
-
+const boundary = function (n){
+if(n >=1) {}
+}
+const numBoundary = boundary(1)
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
@@ -69,6 +71,23 @@ const boundary = function (){}
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const reverseString = function(str) {
+    let newString = ""
+    for (let i = str.length-1; i>= 0; i--) {
+        //console.log (str[i]) 
+        newString = newString + str[i].toUpperCase() 
+
+    }
+
+
+    
+    return newString
+
+
+}
+console.log(reverseString("epicode"))
+console.log(reverseString("ciao"))
+
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
